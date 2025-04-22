@@ -1,12 +1,12 @@
-import { Image, StyleSheet, Text } from 'react-native'
-import Logo from '../assets/img/logo_light.png'
+import { StyleSheet, Text } from 'react-native'
 import { Link } from 'expo-router'
 import ThemedView from '../components/ThemedView'
+import ThemedLogo from '../components/ThemedLogo'
 
 const Home = () => {
   return (
     <ThemedView style={styles.container}>
-      <Image source={Logo} style={styles.img} />
+      <ThemedLogo />
       <Text style={[styles.title, { fontSize: 50 }]}>Read List</Text>
       <Text style={{ marginTop: 10, marginBottom: 13 }}>Reading list app</Text>
       <Link style={styles.link} href="/about">About</Link>
