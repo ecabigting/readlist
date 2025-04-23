@@ -1,4 +1,4 @@
-import { StyleSheet, Text } from 'react-native'
+import { StyleSheet } from 'react-native'
 import { Link } from 'expo-router'
 import ThemedView from '../components/ThemedView'
 import ThemedLogo from '../components/ThemedLogo'
@@ -16,11 +16,11 @@ const Home = () => {
       <Spacer />
       <ThemedText title={false}>Reading list app</ThemedText>
       <Spacer />
-      <Link style={styles.link} href="/about">
-        <ThemedText title={false}>About</ThemedText>
+      <Link style={styles.link} href="/login">
+        <ThemedText title={false}>Login</ThemedText>
       </Link>
-      <Link style={styles.link} href="/contact">
-        <ThemedText title={false}>Contact</ThemedText>
+      <Link style={styles.link} href="/register">
+        <ThemedText title={false}>Register</ThemedText>
       </Link>
     </ThemedView>
   )
