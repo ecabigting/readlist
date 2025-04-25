@@ -1,15 +1,16 @@
 import { StyleSheet } from 'react-native'
 import ThemedText from '../../components/ThemedText'
 import Spacer from '../../components/Spacer'
+import ThemedView from '../../components/ThemedView'
 
 
 const CreateBooks = () => {
   return (
-    <ThemedText title={true} style={styles.container}>
+    <ThemedView safe={true} style={styles.container}>
       <ThemedText title={true} style={styles.heading}>
         Add a New Book</ThemedText>
       <Spacer />
-    </ThemedText>
+    </ThemedView>
 
   )
 }
