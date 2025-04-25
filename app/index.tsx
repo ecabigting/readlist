@@ -22,6 +22,10 @@ const Home = () => {
       <Link style={styles.link} href="/register">
         <ThemedText title={false}>Register</ThemedText>
       </Link>
+      <Link style={styles.link} href="/books">
+        <ThemedText title={false}>Books</ThemedText>
+      </Link>
+
     </ThemedView>
   )
 }
