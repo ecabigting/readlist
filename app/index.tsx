@@ -7,7 +7,7 @@ import ThemedText from '../components/ThemedText'
 
 const Home = () => {
   return (
-    <ThemedView style={styles.container}>
+    <ThemedView safe={true} style={styles.container}>
       <ThemedLogo />
       <Spacer />
       <ThemedText title={true} style={styles.title}>
@@ -37,6 +37,7 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
+    color: 'white',
   },
   img: {
     marginVertical: 50
